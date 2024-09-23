@@ -1,4 +1,4 @@
-package com.LeaveSystem.Domain.Forms;
+package com.LeaveSystem.Domain.Form;
 
 import com.LeaveSystem.DTO.Form.FormRequestDTO;
 import com.LeaveSystem.Domain.User.User;
@@ -27,11 +27,14 @@ public class Forms {
     private LocalDate date_from;
     private LocalDate date_to;
     private String motive;
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     public Forms(FormRequestDTO data) {
         this.type = data.type();
         this.days = data.days();
         this.date_from = data.dateFrom();
         this.motive = data.motive();
+        this.status = Status.WAITING;
     }
 }
