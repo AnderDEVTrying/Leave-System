@@ -1,4 +1,4 @@
-package com.LeaveSystem.Domain.Forms;
+package com.LeaveSystem.Domain.Form;
 
 public enum Leave_Type {
     Sick,vacation, personal, urgent, other
