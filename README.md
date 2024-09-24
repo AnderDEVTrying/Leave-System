@@ -100,12 +100,12 @@ Creates a new leave request.
 
 - **Request Body**:
   ```json
-{
-    "type": "vacation",
-  "days": 5,
-  "dateFrom": "2024-09-25",
-  "motive": "Taking a break for family vacation"
-  }
+   {
+       "type": "vacation",
+     "days": 5,
+     "dateFrom": "2024-09-25",
+     "motive": "Taking a break for family vacation"
+     }
   ```
 
 - **Response**:
