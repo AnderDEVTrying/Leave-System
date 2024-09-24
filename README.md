@@ -31,7 +31,7 @@ This project is an API for managing leave requests in an access and permissions 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/LeaveSystem.git
+   git clone https://github.com/AnderDEVTrying/Leave-System.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -85,7 +85,7 @@ Registers a new user.
     "userName": "User Name",
     "email": "user@example.com",
     "password": "password123",
-    "role": "EMPLOYEE"
+    "role": "REGULAR"
   }
   ```
 
@@ -100,10 +100,11 @@ Creates a new leave request.
 
 - **Request Body**:
   ```json
-  {
-    "startDate": "2024-09-23",
-    "endDate": "2024-09-30",
-    "reason": "Reason for leave"
+{
+    "type": "vacation",
+  "days": 5,
+  "dateFrom": "2024-09-25",
+  "motive": "Taking a break for family vacation"
   }
   ```
 
@@ -123,7 +124,7 @@ Updates the status of a leave request (only accessible by **ADMIN**).
 - **Request Body**:
   ```json
   {
-    "status": "APPROVED"
+    "APPROVED"
   }
   ```
 
